@@ -36,39 +36,8 @@ arguments.
 
 **NOTE**: You must have the `svn` command line tool in your path.
 
-**NOTE** The info object is in camelCased. So this:
-
-```
-'path': '...',
-'workingCopyRootPath': '...',
-'url': '...',
-'relativeUrl': '...',
-'repositoryRoot': '...',
-'repositoryUuid': '...',
-'revision': '...',
-'nodeKind': '...',
-'schedule': '...',
-'lastChangedAuthor': '...',
-'lastChangedRev': '...',
-'lastChangedDate': '...'
-```
-
-Instead of this:
-
-```
-'Path': '...',
-'Working Copy Root Path': '...',
-'URL': '...',
-'Relative URL': '...',
-'Repository Root': '...',
-'Repository UUID': '...',
-'Revision': '...',
-'Node Kind': '...',
-'Schedule': '...',
-'Last Changed Author': '...',
-'Last Changed Rev': '...',
-'Last Changed Date': '...'
-```
+**NOTE**: The data is in the form returned by xml2js from ```svn info --xml``` command output. This ensure that the data
+is always accessible using the same keys (os language independent)
 
 ## Release History
 - v0.2.0 2014-07-11 Allow users to specify revision
