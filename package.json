@@ -30,6 +30,7 @@
   },
   "keywords": [],
   "dependencies": {
+    "lodash": "^3.10.1",
     "shelljs": "~0.2.6",
     "xml2js": "^0.4.10"
   }
